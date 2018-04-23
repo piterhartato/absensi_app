@@ -1,0 +1,131 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.astimen.absensi.fragment.frg_input_karyawan">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip">
+
+        <TextView
+            android:id="@+id/lblUserId"
+            android:text="User Id"
+            android:layout_below="@id/txtIdRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblUserId"
+            android:background="@android:drawable/editbox_background"/>
+        <TextView
+            android:id="@+id/lblUserName"
+            android:text="Email"
+            android:layout_below="@id/txtUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblUserName"
+            android:background="@android:drawable/editbox_background"/>
+        <TextView
+            android:id="@+id/lblPassword"
+            android:layout_below="@id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"/>
+        <EditText
+            android:id="@+id/txtPassword"
+            android:inputType="textPassword"
+            android:layout_below="@id/lblPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background" />
+        <TextView
+            android:id="@+id/lblPassword2"
+            android:layout_below="@id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password Check"/>
+        <EditText
+            android:id="@+id/txtPassword2"
+            android:inputType="textPassword"
+            android:layout_below="@id/lblPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background" />
+        <TextView
+            android:id="@+id/lblDepartment"
+            android:layout_below="@id/txtPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Departement"/>
+        <Spinner
+            android:layout_below="@id/lblDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/department_prompt"
+            android:entries="@array/department_array"
+            android:id="@+id/spnDepartment" />
+        <TextView
+            android:id="@+id/lblSex"
+            android:layout_below="@id/spnDepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sex"/>
+        <RadioGroup
+            android:id="@+id/rgSex"
+            android:layout_below="@id/lblSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rbFemale">
+            <RadioButton
+                android:text="Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbFemale"
+                android:layout_weight="1" />
+            <RadioButton
+                android:text="Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbMale"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lblRole"
+            android:layout_below="@id/rgSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role"/>
+        <CheckBox
+            android:text="Admin"
+            android:layout_below="@id/lblRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbxAdmin" />
+        <CheckBox
+            android:text="User"
+            android:layout_below="@id/lblRole"
+            android:layout_toRightOf="@id/cbxAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbxUser" />
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbxUser"
+            android:layout_alignParentRight="true"
+            android:text="SAVE" />
+    </RelativeLayout>'
+
+</FrameLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.frg_abs_masuk">
+
+    <ScrollView
+        android:id="@+id/SVhome"
+        android:background="@color/colorAccent"
+        android:paddingBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    tools:layout_weight="0.7">
+
+                    <ImageView
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:src="@drawable/logo_adshouse" />
+
+                    <TextView
+                        android:id="@+id/txv_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="15dp"
+                        android:text="Android Studio" />
+                    <TextView
+                        android:id="@+id/txv_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="15dp"
+                        android:text="email@domain.com" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/absenmasuk"
+                            android:layout_width="@dimen/icon_home_width"
+                            android:layout_height="@dimen/icon_home_height"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#00e5ddc3"
+                            android:src="@drawable/time_in" />
+
+                        <TextView
+                            android:id="@+id/lb_timein"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Absen Masuk"
+                            android:textSize="@dimen/text_ic"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+                        <ImageButton
+                            android:layout_width="@dimen/icon_home_width"
+                            android:layout_height="@dimen/icon_home_height"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#00e5ddc3"
+                            android:src="@drawable/ic_break" />
+
+                        <TextView
+                            android:id="@+id/lb_break"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Istirahat"
+                            android:textSize="@dimen/text_ic"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+                        <ImageButton
+                            android:layout_width="@dimen/icon_home_width"
+                            android:layout_height="@dimen/icon_home_height"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#00e5ddc3"
+                            android:src="@drawable/overtime_in" />
+
+                        <TextView
+                            android:id="@+id/lb_overtimein"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Mulai Lembur"
+                            android:textSize="@dimen/text_ic"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/absenkeluar"
+                            android:layout_width="@dimen/icon_home_width"
+                            android:layout_height="@dimen/icon_home_height"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#00e5ddc3"
+                            android:src="@drawable/time_out" />
+
+                        <TextView
+                            android:id="@+id/lb_timeout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="Absen Pulang"
+                            android:textSize="@dimen/text_ic"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+                        <ImageButton
+                            android:layout_width="@dimen/icon_home_width"
+                            android:layout_height="@dimen/icon_home_height"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#00e5ddc3"
+                            android:src="@drawable/izin" />
+
+                        <TextView
+                            android:id="@+id/lb_izin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="Izin"
+                            android:textSize="@dimen/text_ic"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+                        <ImageButton
+                            android:layout_width="@dimen/icon_home_width"
+                            android:layout_height="@dimen/icon_home_height"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#00e5ddc3"
+                            android:src="@drawable/overetime_out" />
+
+                        <TextView
+                            android:id="@+id/lb_ourtimeout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="Selesai Lembur"
+                            android:textSize="@dimen/text_ic"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
